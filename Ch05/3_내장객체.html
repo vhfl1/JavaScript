@@ -36,7 +36,7 @@
 
         let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         let result1 = numbers.map((item)=>{
-            return item + 10;
+            return item+10;
         });
 
         let result2 = numbers.map(item=>item*2);
@@ -57,9 +57,9 @@
         let r1 = str1.length;
         let r2 = str1.charAt(0);
         let r3 = str1.indexOf('e');
-        let r4 = str2.lastIndexOf('e');
-        let r5 = str2.replace('Korea', 'Busan');
-        let r6 = str2.substring(1, 5);
+        let r4 = str1.lastIndexOf('e');
+        let r5 = str1.replace('Korea','Busan');
+        let r6 = str1.substring(1, 5);
 
         document.write('r1 : '+r1+'<br/>');
         document.write('r2 : '+r2+'<br/>');
@@ -92,7 +92,7 @@
         let num1 = Math.random();//0 ~ 1 임의의 실수
         let num2 = num1 * 10;    //1 ~ 10 임의의 실수
         let num3 = Math.ceil(num2); //1 ~ 10 임의의 정수
-        let num4 = Math.ceil(Math.random() * 10);
+        let num4 = Math.ceil(Math.random()*10);
 
         document.write('num1 : '+num1+'<br/>');
         document.write('num2 : '+num2+'<br/>');

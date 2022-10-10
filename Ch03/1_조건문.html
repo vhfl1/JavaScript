@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3_조건문</title>
+    <title>조건문</title>
     <!--
         날짜 : 2022/10/04
         이름 : 윤사랑
@@ -25,11 +25,7 @@
             }
         }
 
-        if(num1 > 0 && num2 > 1){
-            document.write('num1은 0보다 크고 num2는 1보다 크다.<br/>');
-        }
-        
-        //if ~ else
+        //if~else
         let num3 = 3;
         let num4 = 4;
 
@@ -39,11 +35,11 @@
             document.write('num3은 num4보다 작다.<br/>');
         }
 
-        //if ~ else if ~ else
+        //if~else if~else
         if(num1 > num2){
             document.write('num1은 num2보다 크다.<br/>');
         }else if(num2 > num3){
-            document.write('num2는 num3보다 크다<br/>');
+            document.write('num2는 num3보다 크다.<br/>');
         }else if(num3 > num4){
             document.write('num3은 num4보다 크다.<br/>');
         }else{
@@ -58,13 +54,16 @@
 
         switch(result){
             case 10:
-            case 9:    
+            case 9:
                 document.write('A입니다.');
                 break;
             case 8:
                 document.write('B입니다.');
                 break;
-            case 7:    
+            case 7:
+                document.write('C입니다.');
+                break;   
+            case 7:
                 document.write('C입니다.');
                 break;
             case 6:
@@ -72,8 +71,9 @@
                 break;
             default:
                 document.write('F입니다.');
-                break;
+                break;   
         }
+
     </script>
 </body>
 </html>

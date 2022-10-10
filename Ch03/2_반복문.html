@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>2_반복문</title>
     <!--
-        날짜 : 2022/10/05
+        날짜 : 2022/10/04
         이름 : 윤사랑
         내용 : Javascript 반복문 실습하기
     -->
@@ -18,17 +18,16 @@
         for(let i=1; i<=5; i++){
             document.write('i : '+i+'<br/>');
         }
-
         //1부터 10까지의 합
         let sum = 0;
-
-        for(let k=1; k<=10; k++){
+         
+        for(let k = 1; k <= 10; k++){
             sum += k;
         }
 
-        document.write('1부터 10까지 합 : '+sum+'<br/>');
+        document.write('1부터 10까지의 합 : '+sum+'<br/>');
 
-        //1부터 10까지의 짝수
+        //1부터 10까지의 짝수 
         let eSum = 0;
 
         for(let k=1; k<=10; k++){
@@ -41,9 +40,15 @@
 
         //별삼각형
         for(let a=1; a<=10; a++){
-
             for(let b=1; b<a; b++){
                 document.write('☆');
+            }
+            document.write('<br/>');
+        }
+
+        for(let a=10; a>=1; a--){
+            for(let b=1; b<a; b++){
+                document.write('★');
             }
             document.write('<br/>');
         }
@@ -54,7 +59,7 @@
         //while
         let total = 0;
         let k = 1;
-        
+
         while(k<=10){
             if(k%2==0){
                 total += k;
@@ -69,21 +74,28 @@
         let j = 1;
 
         do{
+            if(j%2==1){
+                tot += j;
+            }
 
-        }while()
+            j++;
 
+        }while(j<=10);
 
-        document.write('1부터 10까지 홀수 합 : '+tot+'<br/>')
+        document.write('1부터 10까지 홀수 합 : '+tot+'<br/>');
 
         //break
         let num = 1;
 
-        while(){
+        while(true){
+            if(num%5==0 && num%7==0){
+                break;
+            }
 
+            num++;
         }
 
         document.write('5와 7의 최소공배수 : '+num+'<br/>');
-
     </script>
 
     <h4>구구단</h4>
@@ -98,23 +110,13 @@
             <th>8단</th>
             <th>9단</th>
         </tr>
-        <tr>
-            <td>2 x 1 = 2</td>
-            <td>3 x 1 = 2</td>
-            <td>4 x 1 = 2</td>
-            <td>5 x 1 = 2</td>
-            <td>6 x 1 = 2</td>
-            <td>7 x 1 = 2</td>
-            <td>8 x 1 = 2</td>
-            <td>9 x 1 = 2</td>
-        </tr>
-        <script>
-            for(){
-                document.write('<tr>');
-                for(){
 
-                    document.write('<td></td>')
-                }    
+        <script>
+            for(let x=1; x<=9; x++){
+                document.write('<tr>');
+                for(let y=2; y<=9; y++){
+                    document.write('<td>'+y+'x'+x+'='+x*y+'</td>');
+                }
                 document.write('</tr>');
             }
         </script>

@@ -19,10 +19,10 @@
             color: '흰색',
             speed: 0,
             speedUp: function(speed){
-                this.speed += speed
+                this.speed += speed;
             },
             speedDown: function(speed){
-                this.speed -= speed
+                this.speed -= speed;
             },
             show: function(){
                 document.write('차량명 : '+this.name+'<br/>');
@@ -36,13 +36,15 @@
         car.show();
 
         //kb, 10000 입금, 2000 출금, 조회
-        let kb = new Account('국민은행','101-12-1111','김유신', 0);
+        let kb = new Account('국민은행', '101-12-1234', '김유신', 0);
+        
         kb.deposit(10000);
-        kb.withdraw(2000);++
+        kb.withdraw(2000);
         kb.show();
 
         //ur, 30000 입금, 7000 출금, 조회
-        let ur = new Account('우리은행', '101-11-1111','김유신', 0);
+        let ur = new Account('우리은행', '101-11-1234', '김춘추', 0);
+
         ur.deposit(30000);
         ur.withdraw(7000);
         ur.show();

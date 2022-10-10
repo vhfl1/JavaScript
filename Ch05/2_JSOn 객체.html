@@ -7,7 +7,6 @@
         날짜 : 2022/10/06
         이름 : 윤사랑
         내용 : Javascript  JSON 객체 실습하기
-
         JSON 객체
          - JavaScript Object Notation 자바스크립트 객체 표기방식
          - 키-값 쌍으로 이루어지며 키는 반드시 큰따옴표
@@ -32,12 +31,12 @@
         document.write('age : '+user.age+'<br/>');
 
         //JSON 객체 배열
-        let jsonData = {"users":[
+        let jsonData = {users:[
             {"uid":"a101","name":"김유신","age":25,"addr":"서울"},
             {"uid":"a102","name":"김춘추","age":26,"addr":"대전"},
             {"uid":"a103","name":"장보고","age":27,"addr":"대구"},
             {"uid":"a104","name":"강감찬","age":28,"addr":"부산"},
-            {"uid":"a105","name":"이순신","age":29,"addr":"광주"}
+            {"uid":"a105","name":"이순신","age":29,"addr":"광주"},
         ]};
 
         //JSON 객체 반복문
@@ -48,7 +47,7 @@
             document.write('age : '+user.age+'<br/>');
             document.write('addr : '+user.addr+'<br/>');
             document.write('</p>');
-        }
+        };
 
         //JSON 문자열 변환
         let strJson = JSON.stringify(jsonData);
@@ -56,8 +55,7 @@
 
         //JSON 문자열 -> 객체 변환
         let json = JSON.parse(strJson);
-        document.write('json : '+json+'<br/>');
-
+        document.write('json : '+json+'<br/>')
     </script>
 </body>
 </html>
